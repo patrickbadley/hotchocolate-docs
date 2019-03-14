@@ -23,9 +23,10 @@ The service should start-up and run on the port 5000. In order to test your serv
 Try a query like the following to get started:
 ```
 {
-  human(id:1000){
-    name
-    friends{
+  human(id:1000) {
+    name,
+    appearsIn
+    friends {
       name,
       appearsIn
     }
